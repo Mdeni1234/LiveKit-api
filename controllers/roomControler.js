@@ -1,7 +1,7 @@
 const { AccessToken, RoomServiceClient, Room } = require("livekit-server-sdk");
-require('dotenv').config();
+require("dotenv").config();
 
-const liveitHost = "https://video-call-m23damml.livekit.cloud";
+const liveitHost = process.env.URL_SERVER;
 const roomService = new RoomServiceClient(
   liveitHost,
   process.env.API_KEY,
