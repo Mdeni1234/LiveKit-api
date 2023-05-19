@@ -3,10 +3,10 @@ const cors = require("cors");
 
 const videoCall = require("./routes/videoCalls");
 const corsOptions = {
-  origin: "http://svelte-live-kit.vercel.app", // Ganti dengan URL yang diperbolehkan
+  origin: "http://svelte-live-kit.vercel.app/", // Ganti dengan URL yang diperbolehkan
 };
 const app = express();
-app.use(cors(corsOptions));
+app.use(cors());
 const port = 3000;
 
 app.use(express.json());
